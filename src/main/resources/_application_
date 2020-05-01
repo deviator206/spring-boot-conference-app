@@ -1,0 +1,19 @@
+server:
+    port: 5000
+app:
+    version: 1.0.0
+spring:
+    jpa:
+        properties:
+            database-platform: org.hibernate.dialect.PostgreSQLDialect
+            hibernate:
+                jdbc:
+                    lob: 
+                        non_contextual_creation: true            
+        hibernate:
+            ddl-auto: none
+            show-sql: true
+    datasource:
+        url: ${DB_URL}
+        username: postgres
+        password: Welcome
